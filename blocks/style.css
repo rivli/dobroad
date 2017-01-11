@@ -1,0 +1,105 @@
+
+html {
+background: #e6e6e6;
+}
+
+body {
+margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color:blue;
+}
+
+.header {
+/*border-bottom:1px solid #cccccc;*/
+background: #3c2df4;
+height: 40px;
+padding:0 10%;
+position:fixed;
+width:80%;
+top:0;
+box-shadow: 0px -3px 18px 11px #7a7a7a;
+z-index:1;
+}
+
+.menu {
+float:right;
+}
+
+.blockmenu {
+color:#e6f2ff;
+text-align:center;
+width:150px;
+height:40px;
+display: inline-block;
+}
+
+.blockmenu:hover {
+background: #120693;
+}
+
+
+.workpart {
+width: 80%;
+margin: 0 10%;
+min-height:100%;
+margin-top: 60px;
+margin-bottom: 15px;
+}
+
+.pageplace {
+background-color: white;
+display: inline-block;
+width: 77%;
+border: 1px solid #cccccc;
+}
+
+.page {
+background-color: white;
+min-height:71%;
+padding: 1%;
+}
+
+
+.sidebar {
+float: right;
+display: inline-block;
+width: 22%;
+}
+
+.sbblock {
+background: #f2f2f2;
+border: 1px solid #cccccc;
+text-align:center;
+padding: 2%;
+}
+
+#sbabout {text-decoration:none;position:relative;right:10px;top:3px;color:black;}
+#sbabout:hover {color:blue;}
+
+.postview {
+height:100px;
+border:1px solid #cccccc;
+border-radius:3px;
+background:#f2f2f2;
+}
+
+.spanbutton {
+	height: 30px;
+	width: 150px;
+	display: inline-block;
+}
+
+.spanbutton:hover {
+	background: #e6e6e6;
+}
+
+.input {
+	width:220px;
+}
