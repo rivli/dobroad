@@ -6,18 +6,7 @@
     <title><?php echo $Title ?></title>
     <link rel='stylesheet' type='text/css' href='/blocks/style.css' />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <!--  <script type="text/javascript">
-if(navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(function(position) {
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-			alert(latitude+' '+longitude);
-});
 
-} else {
-    alert("Geolocation API не поддерживается в вашем браузере");
-}
-</script> -->
     </head>
 <body>
 <div class="header" >

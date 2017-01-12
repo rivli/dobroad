@@ -1,16 +1,21 @@
 <?php $Title = "Dobroad"; include_once("blocks/header.php");$_SESSION['ucity']='ufa';?>
 <div id="map" style="height: 500px;"></div>
-  <script type="text/javascript">
+<script type="text/javascript">
+if(navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: position.coords.latitude, lng: position.coords.longitude},
+            zoom: 8
+          });
 
-var map;
-function initMap() {
-map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
 });
-}
 
-  </script>
+} else {
+  alert("Geolocation API не поддерживается в вашем браузере");
+}
+</script>
 <?php
 if ($_SESSION['status'] != "login") {
 ?>
