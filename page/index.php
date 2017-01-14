@@ -55,7 +55,7 @@ if (!$_SESSION['latitude'] && !$_SESSION['longitude']) { ?>
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: <?php echo $_SESSION['latitude'] ?>, lng: <?php echo $_SESSION['latitude']?>},
+        center: {lat: <?php echo $_SESSION['latitude'] ?>, lng: <?php echo $_SESSION['longitude']?>},
         zoom: 8
       });
     }
